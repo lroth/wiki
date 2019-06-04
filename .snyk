@@ -1,0 +1,139 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - express-brute-mongoose > mongoose > mquery > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - follow-redirects > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - express > finalhandler > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - socket.io > socket.io-client > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - socket.io > socket.io-parser > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - axios > follow-redirects > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > needle > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > pm2-axon-rpc > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - socket.io > engine.io > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > pmx > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - socket.io > socket.io-client > engine.io-client > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - socket.io > socket.io-client > socket.io-parser > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - socket.io > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > pmx > vxx > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - socket.io > socket.io-adapter > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > debug:
+        patched: '2019-06-04T07:29:01.234Z'
+  'npm:extend:20180424':
+    - request > extend:
+        patched: '2019-06-04T07:29:01.234Z'
+    - jimp > request > extend:
+        patched: '2019-06-04T07:29:01.234Z'
+    - mathjax-node > jsdom > request > extend:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > pmx > vxx > extend:
+        patched: '2019-06-04T07:29:01.234Z'
+    - chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-06-04T07:29:01.234Z'
+  'npm:hoek:20180212':
+    - jimp > request > hawk > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - jimp > request > hawk > sntp > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - jimp > request > hawk > boom > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - mathjax-node > jsdom > request > hawk > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - mathjax-node > jsdom > request > hawk > boom > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - jimp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - mathjax-node > jsdom > request > hawk > sntp > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - mathjax-node > jsdom > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-04T07:29:01.234Z'
+  'npm:marked:20170907':
+    - simplemde > marked:
+        patched: '2019-06-04T07:29:01.234Z'
+  'npm:moment:20170905':
+    - moment-timezone > moment:
+        patched: '2019-06-04T07:29:01.234Z'
+    - bunyan > moment:
+        patched: '2019-06-04T07:29:01.234Z'
+    - express-brute-mongoose > moment:
+        patched: '2019-06-04T07:29:01.234Z'
+    - cron > moment-timezone > moment:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > moment:
+        patched: '2019-06-04T07:29:01.234Z'
+    - search-index-adder > bunyan > moment:
+        patched: '2019-06-04T07:29:01.234Z'
+    - search-index-searcher > bunyan > moment:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > cron > moment-timezone > moment:
+        patched: '2019-06-04T07:29:01.234Z'
+    - passport-ldapauth > ldapauth-fork > ldapjs > bunyan > moment:
+        patched: '2019-06-04T07:29:01.234Z'
+    - jsonwebtoken > joi > moment:
+        patched: '2019-06-04T07:29:01.234Z'
+  'npm:ms:20170412':
+    - socket.io > socket.io-adapter > debug > ms:
+        patched: '2019-06-04T07:29:01.234Z'
+  'npm:stringstream:20180511':
+    - request > stringstream:
+        patched: '2019-06-04T07:29:01.234Z'
+    - mathjax-node > jsdom > request > stringstream:
+        patched: '2019-06-04T07:29:01.234Z'
+    - chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-06-04T07:29:01.234Z'
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-06-04T07:29:01.234Z'
+    - jimp > request > stringstream:
+        patched: '2019-06-04T07:29:01.234Z'
+  'npm:tough-cookie:20170905':
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-06-04T07:29:01.234Z'
+    - jimp > request > tough-cookie:
+        patched: '2019-06-04T07:29:01.234Z'
+    - mathjax-node > jsdom > tough-cookie:
+        patched: '2019-06-04T07:29:01.234Z'
+    - mathjax-node > jsdom > request > tough-cookie:
+        patched: '2019-06-04T07:29:01.234Z'
+    - chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-06-04T07:29:01.234Z'
+    - request > tough-cookie:
+        patched: '2019-06-04T07:29:01.234Z'
