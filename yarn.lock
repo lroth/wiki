@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@babel/runtime@^7.10.1":
+  version "7.10.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.5.tgz#303d8bd440ecd5a491eae6117fd3367698674c5c"
+  integrity sha512-otddXKhdNn7d0ptoFRHtMLa8LqDxLYwTjB4nYgM1yy5N6gU/MUf8zqyyLltCH3yAVitBzmwK4us+DD0l/MauAg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@glimpse/glimpse-agent-node@0.22.15":
   version "0.22.15"
   resolved "https://registry.yarnpkg.com/@glimpse/glimpse-agent-node/-/glimpse-agent-node-0.22.15.tgz#93075fc56a234f716ed37dc8743be3f58121cfb2"
@@ -3234,9 +3241,12 @@ i18next-xhr-backend@~1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/i18next-xhr-backend/-/i18next-xhr-backend-1.4.2.tgz#7aa766292c46ca83ff6477bb55074b363a646a62"
 
-i18next@~9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-9.0.0.tgz#a89ab0481b5b6b3964f55b12f03de9063d8f4500"
+i18next@~19.6.0:
+  version "19.6.2"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.6.2.tgz#859aeba46db0c7cdfa8ae3de7c3a5cad3b0cec83"
+  integrity sha512-Zyd/Z32FY+sD+Eg6sLj5DeDSlrIN3WZ4onuOBRGcjDx/rvodsyUZ9TJ2Y+3aD9Vu8MPbiMU2WesIER/rs1ioyw==
+  dependencies:
+    "@babel/runtime" "^7.10.1"
 
 iconv-lite@0.4.13:
   version "0.4.13"
@@ -6105,6 +6115,11 @@ regenerator-runtime@^0.10.0, regenerator-runtime@^0.10.5:
 regenerator-runtime@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.0.tgz#7e54fe5b5ccd5d6624ea6255c3473be090b802e1"
+
+regenerator-runtime@^0.13.4:
+  version "0.13.5"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.5.tgz#d878a1d094b4306d10b9096484b33ebd55e26697"
+  integrity sha512-ZS5w8CpKFinUzOwW3c83oPeVXoNsrLsaCoLtJvAClH135j/R77RuymhiSErhm2lKcwSCIpmvIWSbDkIfAqKQlA==
 
 regenerator-transform@0.9.11:
   version "0.9.11"
