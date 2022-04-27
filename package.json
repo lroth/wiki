@@ -106,7 +106,7 @@
     "passport-slack": "0.0.7",
     "passport-windowslive": "~1.0.2",
     "passport.socketio": "~3.7.0",
-    "pm2": "~2.6.1",
+    "pm2": "~4.3.0",
     "pug": "~2.0.0-rc.3",
     "raven": "~2.4.1",
     "read-chunk": "~2.1.0",
