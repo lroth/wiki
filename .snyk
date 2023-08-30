@@ -1,0 +1,87 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:debug:20170905'
+        path: chokidar > fsevents > node-pre-gyp > tar-pack > debug
+    - pm2 > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:debug:20170905'
+        path: pm2 > chokidar > fsevents > node-pre-gyp > tar-pack > debug
+  'npm:extend:20180424':
+    - chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:extend:20180424'
+        path: chokidar > fsevents > node-pre-gyp > request > extend
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:extend:20180424'
+        path: pm2 > chokidar > fsevents > node-pre-gyp > request > extend
+  'npm:hoek:20180212':
+    - chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:hoek:20180212'
+        path: chokidar > fsevents > node-pre-gyp > request > hawk > hoek
+    - chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:hoek:20180212'
+        path: chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek
+    - chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:hoek:20180212'
+        path: chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:hoek:20180212'
+        path: pm2 > chokidar > fsevents > node-pre-gyp > request > hawk > hoek
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:hoek:20180212'
+        path: >-
+          pm2 > chokidar > fsevents > node-pre-gyp > request > hawk > boom >
+          hoek
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:hoek:20180212'
+        path: >-
+          pm2 > chokidar > fsevents > node-pre-gyp > request > hawk > sntp >
+          hoek
+  'npm:moment:20170905':
+    - bunyan > moment:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:moment:20170905'
+        path: bunyan > moment
+    - search-index-adder > bunyan > moment:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:moment:20170905'
+        path: search-index-adder > bunyan > moment
+    - search-index-searcher > bunyan > moment:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:moment:20170905'
+        path: search-index-searcher > bunyan > moment
+    - passport-ldapauth > ldapauth-fork > ldapjs > bunyan > moment:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:moment:20170905'
+        path: passport-ldapauth > ldapauth-fork > ldapjs > bunyan > moment
+  'npm:stringstream:20180511':
+    - chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:stringstream:20180511'
+        path: chokidar > fsevents > node-pre-gyp > request > stringstream
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:stringstream:20180511'
+        path: pm2 > chokidar > fsevents > node-pre-gyp > request > stringstream
+  'npm:tough-cookie:20170905':
+    - chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:tough-cookie:20170905'
+        path: chokidar > fsevents > node-pre-gyp > request > tough-cookie
+    - pm2 > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2023-08-30T14:18:41.774Z'
+        id: 'npm:tough-cookie:20170905'
+        path: pm2 > chokidar > fsevents > node-pre-gyp > request > tough-cookie
