@@ -62,28 +62,12 @@
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@panter/vue-i18next/-/vue-i18next-0.5.1.tgz#714bbeb62c25850231f2681ad11142d3c6e3c645"
 
-"@types/express-serve-static-core@*":
-  version "4.0.49"
-  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.0.49.tgz#3438d68d26e39db934ba941f18e3862a1beeb722"
+"@types/ldapjs@^2.2.2":
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/@types/ldapjs/-/ldapjs-2.2.5.tgz#b6623bc5ad4fab85ef3cfa586db691d016a3598c"
+  integrity sha512-Lv/nD6QDCmcT+V1vaTRnEKE8UgOilVv5pHcQuzkU1LcRe4mbHHuUo/KHi0LKrpdHhQY8FJzryF38fcVdeUIrzg==
   dependencies:
     "@types/node" "*"
-
-"@types/express@*":
-  version "4.0.36"
-  resolved "https://registry.yarnpkg.com/@types/express/-/express-4.0.36.tgz#14eb47de7ecb10319f0a2fb1cf971aa8680758c2"
-  dependencies:
-    "@types/express-serve-static-core" "*"
-    "@types/serve-static" "*"
-
-"@types/ldapjs@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@types/ldapjs/-/ldapjs-1.0.0.tgz#d940cb412140caec14edaa9c76d5b92799dab495"
-  dependencies:
-    "@types/node" "*"
-
-"@types/mime@*":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.1.tgz#2cf42972d0931c1060c7d5fa6627fce6bd876f2f"
 
 "@types/node@*":
   version "8.0.14"
@@ -92,23 +76,6 @@
 "@types/node@^6.0.46":
   version "6.0.84"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.84.tgz#193ffe5a9f42864d425ffd9739d95b753c6a1eab"
-
-"@types/node@^7.0.21", "@types/node@^7.0.23":
-  version "7.0.38"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.38.tgz#140ecc61930b328e72914237c58dd62c8829e94d"
-
-"@types/passport@^0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@types/passport/-/passport-0.3.3.tgz#463455c4245ed232d6ce43615580c1001ade8234"
-  dependencies:
-    "@types/express" "*"
-
-"@types/serve-static@*":
-  version "1.7.31"
-  resolved "https://registry.yarnpkg.com/@types/serve-static/-/serve-static-1.7.31.tgz#15456de8d98d6b4cff31be6c6af7492ae63f521a"
-  dependencies:
-    "@types/express-serve-static-core" "*"
-    "@types/mime" "*"
 
 JSONStream@^1.2.1:
   version "1.3.1"
@@ -136,6 +103,11 @@ abstract-leveldown@~2.6.1:
   resolved "https://registry.yarnpkg.com/abstract-leveldown/-/abstract-leveldown-2.6.1.tgz#f9014a5669b746418e145168dea49a044ae15900"
   dependencies:
     xtend "~4.0.0"
+
+abstract-logging@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/abstract-logging/-/abstract-logging-2.0.1.tgz#6b0c371df212db7129b57d2e7fcf282b8bf1c839"
+  integrity sha512-2BjRTZxTPvheOvGbBslFSYOUkr+SjPtOnrLP33f+VIWLzezQpZcqVg7ja3L4dBXmzzgwT+a029jRx5PCi3JuiA==
 
 accepts@1.3.3, accepts@~1.3.3:
   version "1.3.3"
@@ -396,13 +368,16 @@ asap@~2.0.3:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
 
-asn1@0.2.3, asn1@~0.2.3:
+asn1@^0.2.4:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.6.tgz#0d3a7bb6e64e02a90c0303b31f292868ea09a08d"
+  integrity sha512-ix/FxPn0MDjeyJ7i/yoHGFt/EX6LyNbxSEhPPXODPL+KB0VPk86UYfL0lMdy+KCnv+fmvIzySwaK5COwqVbWTQ==
+  dependencies:
+    safer-buffer "~2.1.0"
+
+asn1@~0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.3.tgz#dac8787713c9966849fc8180777ebe9c1ddf3b86"
-
-assert-plus@0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-0.1.5.tgz#ee74009413002d84cec7219c6ac811812e723160"
 
 assert-plus@1.0.0, assert-plus@^1.0.0:
   version "1.0.0"
@@ -1230,15 +1205,6 @@ builtin-modules@^1.0.0, builtin-modules@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
 
-bunyan@^1.8.1, bunyan@^1.8.10, bunyan@^1.8.3:
-  version "1.8.10"
-  resolved "https://registry.yarnpkg.com/bunyan/-/bunyan-1.8.10.tgz#201fedd26c7080b632f416072f53a90b9a52981c"
-  optionalDependencies:
-    dtrace-provider "~0.8"
-    moment "^2.10.6"
-    mv "~2"
-    safe-json-stringify "~1"
-
 bunyan@~1.8.12:
   version "1.8.12"
   resolved "https://registry.yarnpkg.com/bunyan/-/bunyan-1.8.12.tgz#f150f0f6748abdd72aeae84f04403be2ef113797"
@@ -1796,7 +1762,7 @@ cycle@1.0.x:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/cycle/-/cycle-1.0.3.tgz#21e80b2be8580f98b468f379430662b046c34ad2"
 
-dashdash@^1.12.0, dashdash@^1.14.0:
+dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
   dependencies:
@@ -1989,12 +1955,6 @@ domutils@^1.5.1:
   dependencies:
     dom-serializer "0"
     domelementtype "1"
-
-dtrace-provider@^0.7.0:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/dtrace-provider/-/dtrace-provider-0.7.1.tgz#c06b308f2f10d5d5838aec9c571e5d588dc71d04"
-  dependencies:
-    nan "^2.3.3"
 
 dtrace-provider@~0.8:
   version "0.8.3"
@@ -2545,10 +2505,6 @@ extract-opts@^3.2.0:
 extsprintf@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
-
-extsprintf@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.2.0.tgz#5ad946c22f5b32ba7f8cd7426711c6e8a3fc2529"
 
 extsprintf@^1.2.0:
   version "1.3.0"
@@ -3941,6 +3897,11 @@ js-base64@^2.1.8:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
 
+js-logger@^1.4.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/js-logger/-/js-logger-1.6.1.tgz#8f09671b515e4a6f31dced8fdb8923432e2c60af"
+  integrity sha512-yTgMCPXVjhmg28CuUH8CKjU+cIKL/G+zTu4Fn4lQxs8mRFH/03QTNvEFngcxfg/gRDiQAOoyCKmMTOm9ayOzXA==
+
 js-stringify@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/js-stringify/-/js-stringify-1.0.2.tgz#1736fddfd9724f28a3682adc6230ae7e4e9679db"
@@ -4149,37 +4110,36 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-ldap-filter@0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/ldap-filter/-/ldap-filter-0.2.2.tgz#f2b842be0b86da3352798505b31ebcae590d77d0"
+ldap-filter@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/ldap-filter/-/ldap-filter-0.3.3.tgz#2b14c68a2a9d4104dbdbc910a1ca85fd189e9797"
+  integrity sha512-/tFkx5WIn4HuO+6w9lsfxq4FN3O+fDZeO9Mek8dCD8rTUpqzRa766BOBO7BcGkn3X86m5+cBm1/2S/Shzz7gMg==
   dependencies:
-    assert-plus "0.1.5"
+    assert-plus "^1.0.0"
 
-ldapauth-fork@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/ldapauth-fork/-/ldapauth-fork-4.0.1.tgz#17edf8fc6a69c330546edb123fed59fbe2c20d49"
+ldapauth-fork@^5.0.1:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/ldapauth-fork/-/ldapauth-fork-5.0.5.tgz#984f98ffda8622a4dcf150533e2d3282372c2cb1"
+  integrity sha512-LWUk76+V4AOZbny/3HIPQtGPWZyA3SW2tRhsWIBi9imP22WJktKLHV1ofd8Jo/wY7Ve6vAT7FCI5mEn3blZTjw==
   dependencies:
-    "@types/ldapjs" "^1.0.0"
-    "@types/node" "^7.0.21"
+    "@types/ldapjs" "^2.2.2"
     bcryptjs "^2.4.0"
-    ldapjs "^1.0.1"
-    lru-cache "^4.0.2"
+    ldapjs "^2.2.1"
+    lru-cache "^7.10.1"
 
-ldapjs@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ldapjs/-/ldapjs-1.0.1.tgz#352b812ae74b0a8e96549a4b896060eee1b9a546"
+ldapjs@^2.2.1:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/ldapjs/-/ldapjs-2.3.3.tgz#06c317d3cbb5ac42fbba741e1a8b130ffcf997ab"
+  integrity sha512-75QiiLJV/PQqtpH+HGls44dXweviFwQ6SiIK27EqzKQ5jU/7UFrl2E5nLdQ3IYRBzJ/AVFJI66u0MZ0uofKYwg==
   dependencies:
-    asn1 "0.2.3"
+    abstract-logging "^2.0.0"
+    asn1 "^0.2.4"
     assert-plus "^1.0.0"
     backoff "^2.5.0"
-    bunyan "^1.8.3"
-    dashdash "^1.14.0"
-    ldap-filter "0.2.2"
+    ldap-filter "^0.3.3"
     once "^1.4.0"
-    vasync "^1.6.4"
+    vasync "^2.2.0"
     verror "^1.8.1"
-  optionalDependencies:
-    dtrace-provider "^0.7.0"
 
 lego-api@^1.0.7:
   version "1.0.8"
@@ -4482,12 +4442,17 @@ lru-cache@2.2.x:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.2.4.tgz#6c658619becf14031d0d0b594b16042ce4dc063d"
 
-lru-cache@^4.0.0, lru-cache@^4.0.1, lru-cache@^4.0.2:
+lru-cache@^4.0.0, lru-cache@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.1.tgz#622e32e82488b49279114a4f9ecf45e7cd6bba55"
   dependencies:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
+
+lru-cache@^7.10.1:
+  version "7.18.3"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.18.3.tgz#f793896e0fd0e954a59dfdd82f0773808df6aa89"
+  integrity sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==
 
 ltgt@~2.1.3:
   version "2.1.3"
@@ -5379,13 +5344,12 @@ passport-google-oauth20@~1.0.0:
   dependencies:
     passport-oauth2 "1.x.x"
 
-passport-ldapauth@~2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/passport-ldapauth/-/passport-ldapauth-2.0.0.tgz#42dff004417185d0a4d9f776a3eed8d4731fd689"
+passport-ldapauth@~3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/passport-ldapauth/-/passport-ldapauth-3.0.1.tgz#1432e8469de18bd46b5b39a46a866b416c1ddded"
+  integrity sha512-TRRx3BHi8GC8MfCT9wmghjde/EGeKjll7zqHRRfGRxXbLcaDce2OftbQrFG7/AWaeFhR6zpZHtBQ/IkINdLVjQ==
   dependencies:
-    "@types/node" "^7.0.23"
-    "@types/passport" "^0.3.3"
-    ldapauth-fork "^4.0.1"
+    ldapauth-fork "^5.0.1"
     passport-strategy "^1.0.0"
 
 passport-local@~1.0.0:
@@ -6301,6 +6265,11 @@ safe-json-stringify@~1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/safe-json-stringify/-/safe-json-stringify-1.0.4.tgz#81a098f447e4bbc3ff3312a243521bc060ef5911"
 
+safer-buffer@~2.1.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
+  integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
+
 sane@~1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/sane/-/sane-1.6.0.tgz#9610c452307a135d29c1fdfe2547034180c46775"
@@ -6333,25 +6302,27 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
-search-index-adder@~0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/search-index-adder/-/search-index-adder-0.3.9.tgz#a94b5fc5b27f1827c43eab599c760dcc4c29599d"
+search-index-adder@~0.3.10:
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/search-index-adder/-/search-index-adder-0.3.11.tgz#d071a14b301d8fb3014f9d081c90075778282a79"
+  integrity sha512-svdYzUYYQwJUQFw7TaAqNwS21kUO1om7Hy/SBJomLYejTceyFMx43JmE0n2ReCFKaoP40q1q6zfOsZHsYcAbyQ==
   dependencies:
     JSONStream "^1.2.1"
     async "^2.3.0"
-    bunyan "^1.8.10"
     docproc "^1.0.0"
+    js-logger "^1.4.1"
     levelup "^1.3.8"
     pumpify "^1.3.5"
   optionalDependencies:
     leveldown "^1.7.1"
 
-search-index-searcher@~0.2.10:
-  version "0.2.10"
-  resolved "https://registry.yarnpkg.com/search-index-searcher/-/search-index-searcher-0.2.10.tgz#3b52b8bb643065883997dfce57c6c792ec551cb0"
+search-index-searcher@~0.3.1:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/search-index-searcher/-/search-index-searcher-0.3.2.tgz#28e7ca87067f413de13bf6f1b4c36838aebb6134"
+  integrity sha512-e2W0rhYpKuI3I9kp8sUqGcXZ4SFCMZaXy65NFp3rihjd/9OXZscV0KWpCN8Et0jo6M4DqDzGxvzRKtcZh168fQ==
   dependencies:
-    bunyan "^1.8.1"
     intersect-arrays-to-stream "^0.0.3"
+    js-logger "^1.4.1"
     levelup "^1.3.8"
     lodash.difference "^4.5.0"
     lodash.intersection "^4.4.0"
@@ -6360,6 +6331,7 @@ search-index-searcher@~0.2.10:
     lodash.union "^4.6.0"
     lodash.uniq "^4.5.0"
     ngraminator "0.0.1"
+    stopword "^0.1.8"
   optionalDependencies:
     leveldown "^1.6.0"
 
@@ -6712,6 +6684,11 @@ stdout-stream@^1.4.0:
   resolved "https://registry.yarnpkg.com/stdout-stream/-/stdout-stream-1.4.0.tgz#a2c7c8587e54d9427ea9edb3ac3f2cd522df378b"
   dependencies:
     readable-stream "^2.0.1"
+
+stopword@^0.1.8:
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/stopword/-/stopword-0.1.19.tgz#a56e763c0cd6888c2fb1b44eac34757156badf4f"
+  integrity sha512-oKkl/LClyJ2YLWm2xZvIiCUGiTsggj+BPOQyt3IKtPUJZj43jYxFJEmXvP1VZQvMuexdodMBshL4sVUSPURmwg==
 
 stopword@~0.1.6:
   version "0.1.6"
@@ -7288,35 +7265,30 @@ vary@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.0.1.tgz#99e4981566a286118dfb2b817357df7993376d10"
 
-vasync@^1.6.4:
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/vasync/-/vasync-1.6.4.tgz#dfe93616ad0e7ae801b332a9d88bfc5cdc8e1d1f"
+vasync@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/vasync/-/vasync-2.2.1.tgz#d881379ff3685e4affa8e775cf0fd369262a201b"
+  integrity sha512-Hq72JaTpcTFdWiNA4Y22Amej2GH3BFmBaKPPlDZ4/oC8HNn2ISHLkFrJU4Ds8R3jcUi7oo5Y9jcMHKjES+N9wQ==
   dependencies:
-    verror "1.6.0"
+    verror "1.10.0"
 
 vee-validate@~2.0.0-rc.14:
   version "2.0.0-rc.14"
   resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-2.0.0-rc.14.tgz#ecbd3ddff33fa6a42ebb4a468c343e1eb5d2b38f"
 
-verror@1.3.6:
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/verror/-/verror-1.3.6.tgz#cff5df12946d297d2baaefaa2689e25be01c005c"
-  dependencies:
-    extsprintf "1.0.2"
-
-verror@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/verror/-/verror-1.6.0.tgz#7d13b27b1facc2e2da90405eb5ea6e5bdd252ea5"
-  dependencies:
-    extsprintf "1.2.0"
-
-verror@^1.8.1:
+verror@1.10.0, verror@^1.8.1:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/verror/-/verror-1.10.0.tgz#3a105ca17053af55d6e270c1f8288682e18da400"
   dependencies:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+verror@1.3.6:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/verror/-/verror-1.3.6.tgz#cff5df12946d297d2baaefaa2689e25be01c005c"
+  dependencies:
+    extsprintf "1.0.2"
 
 vizion@^0.2:
   version "0.2.13"
