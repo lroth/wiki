@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "auto-load": "~3.0.0",
-    "axios": "~0.16.2",
+    "axios": "~0.21.1",
     "bcryptjs-then": "~1.0.1",
     "bluebird": "~3.5.0",
     "body-parser": "~1.17.2",
@@ -60,7 +60,7 @@
     "express-session": "~1.15.5",
     "file-type": "~6.1.0",
     "filesize.js": "~1.0.2",
-    "follow-redirects": "~1.2.4",
+    "follow-redirects": "~1.15.6",
     "fs-extra": "~4.0.1",
     "git-wrapper2-promise": "~0.2.9",
     "highlight.js": "~9.12.0",
