@@ -1230,7 +1230,7 @@ builtin-modules@^1.0.0, builtin-modules@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
 
-bunyan@^1.8.1, bunyan@^1.8.10, bunyan@^1.8.3:
+bunyan@^1.8.3:
   version "1.8.10"
   resolved "https://registry.yarnpkg.com/bunyan/-/bunyan-1.8.10.tgz#201fedd26c7080b632f416072f53a90b9a52981c"
   optionalDependencies:
@@ -3941,6 +3941,11 @@ js-base64@^2.1.8:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
 
+js-logger@^1.4.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/js-logger/-/js-logger-1.6.1.tgz#8f09671b515e4a6f31dced8fdb8923432e2c60af"
+  integrity sha512-yTgMCPXVjhmg28CuUH8CKjU+cIKL/G+zTu4Fn4lQxs8mRFH/03QTNvEFngcxfg/gRDiQAOoyCKmMTOm9ayOzXA==
+
 js-stringify@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/js-stringify/-/js-stringify-1.0.2.tgz#1736fddfd9724f28a3682adc6230ae7e4e9679db"
@@ -6333,25 +6338,27 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
-search-index-adder@~0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/search-index-adder/-/search-index-adder-0.3.9.tgz#a94b5fc5b27f1827c43eab599c760dcc4c29599d"
+search-index-adder@~0.3.10:
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/search-index-adder/-/search-index-adder-0.3.11.tgz#d071a14b301d8fb3014f9d081c90075778282a79"
+  integrity sha512-svdYzUYYQwJUQFw7TaAqNwS21kUO1om7Hy/SBJomLYejTceyFMx43JmE0n2ReCFKaoP40q1q6zfOsZHsYcAbyQ==
   dependencies:
     JSONStream "^1.2.1"
     async "^2.3.0"
-    bunyan "^1.8.10"
     docproc "^1.0.0"
+    js-logger "^1.4.1"
     levelup "^1.3.8"
     pumpify "^1.3.5"
   optionalDependencies:
     leveldown "^1.7.1"
 
-search-index-searcher@~0.2.10:
-  version "0.2.10"
-  resolved "https://registry.yarnpkg.com/search-index-searcher/-/search-index-searcher-0.2.10.tgz#3b52b8bb643065883997dfce57c6c792ec551cb0"
+search-index-searcher@~0.3.1:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/search-index-searcher/-/search-index-searcher-0.3.2.tgz#28e7ca87067f413de13bf6f1b4c36838aebb6134"
+  integrity sha512-e2W0rhYpKuI3I9kp8sUqGcXZ4SFCMZaXy65NFp3rihjd/9OXZscV0KWpCN8Et0jo6M4DqDzGxvzRKtcZh168fQ==
   dependencies:
-    bunyan "^1.8.1"
     intersect-arrays-to-stream "^0.0.3"
+    js-logger "^1.4.1"
     levelup "^1.3.8"
     lodash.difference "^4.5.0"
     lodash.intersection "^4.4.0"
@@ -6360,6 +6367,7 @@ search-index-searcher@~0.2.10:
     lodash.union "^4.6.0"
     lodash.uniq "^4.5.0"
     ngraminator "0.0.1"
+    stopword "^0.1.8"
   optionalDependencies:
     leveldown "^1.6.0"
 
@@ -6712,6 +6720,11 @@ stdout-stream@^1.4.0:
   resolved "https://registry.yarnpkg.com/stdout-stream/-/stdout-stream-1.4.0.tgz#a2c7c8587e54d9427ea9edb3ac3f2cd522df378b"
   dependencies:
     readable-stream "^2.0.1"
+
+stopword@^0.1.8:
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/stopword/-/stopword-0.1.19.tgz#a56e763c0cd6888c2fb1b44eac34757156badf4f"
+  integrity sha512-oKkl/LClyJ2YLWm2xZvIiCUGiTsggj+BPOQyt3IKtPUJZj43jYxFJEmXvP1VZQvMuexdodMBshL4sVUSPURmwg==
 
 stopword@~0.1.6:
   version "0.1.6"
