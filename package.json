@@ -110,7 +110,7 @@
     "pug": "~2.0.0-rc.3",
     "raven": "~2.4.1",
     "read-chunk": "~2.1.0",
-    "remove-markdown": "~0.2.2",
+    "remove-markdown": "~0.5.0",
     "request": "~2.81.0",
     "search-index-adder": "~0.3.9",
     "search-index-searcher": "~0.2.10",
