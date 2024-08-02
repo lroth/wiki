@@ -6149,9 +6149,10 @@ regjsparser@^0.1.4:
   dependencies:
     jsesc "~0.5.0"
 
-remove-markdown@~0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/remove-markdown/-/remove-markdown-0.2.2.tgz#66b0ceeba9fb77ca9636bb1b0307ce21a32a12a6"
+remove-markdown@~0.5.0:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/remove-markdown/-/remove-markdown-0.5.2.tgz#1e52602260cc1e65e6f0c4f9e9662141ef3bd302"
+  integrity sha512-/VOt3snBKnK66TIiomtmCptc8V0aSVDBHtihWrL1ZVrVoCtvQx7Chs4yfP37JaxZTxE3SEmJTIN8pzrO/+XPlg==
 
 remove-trailing-separator@^1.0.1:
   version "1.0.2"
